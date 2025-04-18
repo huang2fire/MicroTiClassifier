@@ -1,0 +1,8 @@
+# Train
+epoch = 50
+
+# AdamW
+base_lr = 1e-4
+features_lr = 1e-5
+classifier_lr = 1e-4
+weight_decay = 1e-2

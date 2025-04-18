@@ -1,0 +1,25 @@
+model = "./output/checkpoints/Ti5.pt"
+
+[log]
+stats = "./output/log/stats.csv"
+train_log = "./output/log/train_log.csv"
+val_pred = "./output/log/val_pred.csv"
+val_report = "./output/log/val_report.csv"
+pca_2d = "./output/log/pca_2d.csv"
+tsne_2d = "./output/log/tsne_2d.csv"
+umap_2d = "./output/log/umap_2d.csv"
+
+[chart]
+stats = "./output/chart/stats.png"
+grid = "./output/chart/grid.png"
+train_log = "./output/chart/train_log.png"
+val_report = "./output/chart/val report.png"
+PR = "./output/chart/PR.png"
+ROC = "./output/chart/ROC.png"
+matrix = "./output/chart/confusion matrix.png"
+pca_2d = "./output/chart/pca 2d.png"
+tsne_2d = "./output/chart/tsne 2d.png"
+umap_2d = "./output/chart/umap 2d.png"
+
+[npy]
+feature = "./output/log/semantic_feature.npy"

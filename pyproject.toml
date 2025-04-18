@@ -1,0 +1,38 @@
+[project]
+name = "MicroTiClassifier"
+version = "1.0.0"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "grad-cam>=1.5.5",
+  "jupyterlab>=4.4.0",
+  "matplotlib>=3.10.1",
+  "pandas>=2.2.3",
+  "scikit-learn>=1.6.1",
+  "seaborn>=0.13.2",
+  "torch>=2.3.1",
+  "torchvision>=0.18.1",
+  "tqdm>=4.67.1",
+  "transformers>=4.51.3",
+  "umap-learn>=0.5.7",
+]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
+  { index = "pytorch-cu121", marker = "sys_platform == 'linux'" },
+]
+torchvision = [
+  { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
+  { index = "pytorch-cu121", marker = "sys_platform == 'linux'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
