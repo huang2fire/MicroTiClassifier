@@ -11,6 +11,7 @@ MicroTiClassifier 是一个基于深度学习的图像分类实验项目。
 |`config`|配置文件|文件路径、训练参数|
 |`data`|数据集|无|
 |`log`|数据处理日志|运行时生成|
+|`notebook`|JupyterLab|模型训练的 notebook|
 |`output`|模型训练输出|运行时生成|
 |`script`|可视化分析脚本|网格图、训练日志、混淆矩阵、PCA 降维、PR 曲线、分类报告、ROC 曲线、数据集统计、t-SNE 降维、UMAP 降维|
 |`source`|模型相关脚本|模型导出、类激活热力图、模型预测、语义特征提取、模型训练|
